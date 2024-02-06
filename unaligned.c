@@ -12,6 +12,9 @@
 
 #include <sys/prctl.h>
 
+/* uClibc is lacking ucontext_t */
+#include "local_ucontext.h"
+
 #define ARRAY_SIZE(x) (sizeof(x) / sizeof((x)[0]))
 #define stringify(s) __stringify(s)
 #define __stringify(s) #s
