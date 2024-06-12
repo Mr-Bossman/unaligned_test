@@ -1,0 +1,4 @@
+config BR2_PACKAGE_UNALIGNED_TEST
+	bool "RISC-V unaligned test program"
+	help
+		program to test RISC-V unaligned accesses
